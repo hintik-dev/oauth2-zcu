@@ -1,0 +1,63 @@
+{
+  "name": "hintik-dev/oauth2-zcu",
+  "description": "ZČU Orion (shib.zcu.cz) OpenID Connect provider for the PHP League's OAuth 2.0 Client, with optional Nette / Contributte integration.",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "oauth",
+    "oauth2",
+    "oidc",
+    "openid-connect",
+    "zcu",
+    "orion",
+    "shibboleth",
+    "nette",
+    "contributte",
+    "authentication",
+    "authorization"
+  ],
+  "authors": [
+    {
+      "name": "Jan Hinterholzinger",
+      "homepage": "https://github.com/hintik-dev"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/hintik-dev/oauth2-zcu/issues",
+    "source": "https://github.com/hintik-dev/oauth2-zcu"
+  },
+  "require": {
+    "php": ">=8.1",
+    "league/oauth2-client": "^2.7"
+  },
+  "require-dev": {
+    "contributte/oauth2-client": "^0.3.2",
+    "firebase/php-jwt": "^6.11 || ^7.0",
+    "nette/http": "^3.2",
+    "phpstan/phpstan": "^2.2",
+    "phpunit/phpunit": "^10.5"
+  },
+  "suggest": {
+    "contributte/oauth2-client": "Enables the session-backed authorization code flow (HintikDev\\OAuth2\\Client\\Flow\\ZcuAuthCodeFlow) for Nette applications.",
+    "firebase/php-jwt": "Required by HintikDev\\OAuth2\\Client\\Token\\ZcuIdTokenVerifier to verify ID token signatures against the IdP JWKS."
+  },
+  "autoload": {
+    "psr-4": {
+      "HintikDev\\OAuth2\\Client\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HintikDev\\OAuth2\\Client\\Tests\\": "test"
+    }
+  },
+  "scripts": {
+    "tests": "phpunit",
+    "phpstan": "phpstan analyse"
+  },
+  "prefer-stable": true,
+  "minimum-stability": "stable",
+  "config": {
+    "sort-packages": true
+  }
+}
