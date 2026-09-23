@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace HintikDev\OAuth2\Client\Provider;
+namespace Hintik\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 

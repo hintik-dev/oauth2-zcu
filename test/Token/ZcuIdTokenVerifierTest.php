@@ -1,13 +1,13 @@
 <?php declare(strict_types = 1);
 
-namespace HintikDev\OAuth2\Client\Tests\Token;
+namespace Hintik\OAuth2\Client\Tests\Token;
 
 use Firebase\JWT\JWT;
-use HintikDev\OAuth2\Client\Exception\IdTokenException;
-use HintikDev\OAuth2\Client\Provider\Zcu;
-use HintikDev\OAuth2\Client\Tests\Support\MockHttpClient;
-use HintikDev\OAuth2\Client\Token\ZcuIdToken;
-use HintikDev\OAuth2\Client\Token\ZcuIdTokenVerifier;
+use Hintik\OAuth2\Client\Exception\IdTokenException;
+use Hintik\OAuth2\Client\Provider\Zcu;
+use Hintik\OAuth2\Client\Tests\Support\MockHttpClient;
+use Hintik\OAuth2\Client\Token\ZcuIdToken;
+use Hintik\OAuth2\Client\Token\ZcuIdTokenVerifier;
 use League\OAuth2\Client\Token\AccessToken;
 use OpenSSLAsymmetricKey;
 use PHPUnit\Framework\TestCase;

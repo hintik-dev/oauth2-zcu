@@ -30,7 +30,7 @@ claims your relying party gets released, and whether the client is registered fo
 ## Usage
 
 ```php
-use HintikDev\OAuth2\Client\Provider\Zcu;
+use Hintik\OAuth2\Client\Provider\Zcu;
 
 $provider = new Zcu([
     'clientId'     => getenv('ZCU_OIDC_CLIENT_ID'),
@@ -92,13 +92,13 @@ Register it as an ordinary service:
 ```neon
 services:
     zcuOidcProvider:
-        factory: HintikDev\OAuth2\Client\Provider\Zcu([
+        factory: Hintik\OAuth2\Client\Provider\Zcu([
             clientId: %zcuOidc.clientId%
             clientSecret: %zcuOidc.clientSecret%
         ])
         autowired: false
 
-    zcuOidcFlow: HintikDev\OAuth2\Client\Flow\ZcuAuthCodeFlow(@zcuOidcProvider)
+    zcuOidcFlow: Hintik\OAuth2\Client\Flow\ZcuAuthCodeFlow(@zcuOidcProvider)
 ```
 
 ```php
@@ -170,8 +170,8 @@ from the session automatically:
 
 ```neon
 services:
-    zcuOidcVerifier: HintikDev\OAuth2\Client\Token\ZcuIdTokenVerifier(@zcuOidcProvider)
-    zcuOidcFlow: HintikDev\OAuth2\Client\Flow\ZcuAuthCodeFlow(@zcuOidcProvider, idTokenVerifier: @zcuOidcVerifier)
+    zcuOidcVerifier: Hintik\OAuth2\Client\Token\ZcuIdTokenVerifier(@zcuOidcProvider)
+    zcuOidcFlow: Hintik\OAuth2\Client\Flow\ZcuAuthCodeFlow(@zcuOidcProvider, idTokenVerifier: @zcuOidcVerifier)
 ```
 
 `ZcuIdToken::fromAccessToken($accessToken)` reads the claims without verifying, which is what

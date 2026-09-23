@@ -1,12 +1,12 @@
 <?php declare(strict_types = 1);
 
-namespace HintikDev\OAuth2\Client\Exception;
+namespace Hintik\OAuth2\Client\Exception;
 
 use RuntimeException;
 use Throwable;
 
 /**
- * Single catchable failure type for {@see \HintikDev\OAuth2\Client\Flow\ZcuAuthCodeFlow::authenticate()}.
+ * Single catchable failure type for {@see \Hintik\OAuth2\Client\Flow\ZcuAuthCodeFlow::authenticate()}.
  *
  * The underlying flow can fail in five unrelated ways — the user cancelling at the IdP, a
  * malformed callback, a state mismatch, an error from the identity provider, or a bad ID

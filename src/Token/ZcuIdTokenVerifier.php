@@ -1,12 +1,12 @@
 <?php declare(strict_types = 1);
 
-namespace HintikDev\OAuth2\Client\Token;
+namespace Hintik\OAuth2\Client\Token;
 
 use Firebase\JWT\JWK;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
-use HintikDev\OAuth2\Client\Exception\IdTokenException;
-use HintikDev\OAuth2\Client\Provider\Zcu;
+use Hintik\OAuth2\Client\Exception\IdTokenException;
+use Hintik\OAuth2\Client\Provider\Zcu;
 use League\OAuth2\Client\Token\AccessTokenInterface;
 use RuntimeException;
 use stdClass;

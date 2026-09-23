@@ -38,17 +38,17 @@
     "phpunit/phpunit": "^10.5"
   },
   "suggest": {
-    "contributte/oauth2-client": "Enables the session-backed authorization code flow (HintikDev\\OAuth2\\Client\\Flow\\ZcuAuthCodeFlow) for Nette applications.",
-    "firebase/php-jwt": "Required by HintikDev\\OAuth2\\Client\\Token\\ZcuIdTokenVerifier to verify ID token signatures against the IdP JWKS."
+    "contributte/oauth2-client": "Enables the session-backed authorization code flow (Hintik\\OAuth2\\Client\\Flow\\ZcuAuthCodeFlow) for Nette applications.",
+    "firebase/php-jwt": "Required by Hintik\\OAuth2\\Client\\Token\\ZcuIdTokenVerifier to verify ID token signatures against the IdP JWKS."
   },
   "autoload": {
     "psr-4": {
-      "HintikDev\\OAuth2\\Client\\": "src"
+      "Hintik\\OAuth2\\Client\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "HintikDev\\OAuth2\\Client\\Tests\\": "test"
+      "Hintik\\OAuth2\\Client\\Tests\\": "test"
     }
   },
   "scripts": {

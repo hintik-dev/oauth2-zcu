@@ -1,9 +1,9 @@
 <?php declare(strict_types = 1);
 
-namespace HintikDev\OAuth2\Client\Tests\Token;
+namespace Hintik\OAuth2\Client\Tests\Token;
 
-use HintikDev\OAuth2\Client\Exception\IdTokenException;
-use HintikDev\OAuth2\Client\Token\ZcuIdToken;
+use Hintik\OAuth2\Client\Exception\IdTokenException;
+use Hintik\OAuth2\Client\Token\ZcuIdToken;
 use League\OAuth2\Client\Token\AccessToken;
 use PHPUnit\Framework\TestCase;
 

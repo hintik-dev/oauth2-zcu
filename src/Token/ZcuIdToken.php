@@ -1,9 +1,9 @@
 <?php declare(strict_types = 1);
 
-namespace HintikDev\OAuth2\Client\Token;
+namespace Hintik\OAuth2\Client\Token;
 
 use DateTimeImmutable;
-use HintikDev\OAuth2\Client\Exception\IdTokenException;
+use Hintik\OAuth2\Client\Exception\IdTokenException;
 use League\OAuth2\Client\Token\AccessTokenInterface;
 
 /**

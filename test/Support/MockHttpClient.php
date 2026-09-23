@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace HintikDev\OAuth2\Client\Tests\Support;
+namespace Hintik\OAuth2\Client\Tests\Support;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;

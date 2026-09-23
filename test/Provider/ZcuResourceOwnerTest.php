@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace HintikDev\OAuth2\Client\Tests\Provider;
+namespace Hintik\OAuth2\Client\Tests\Provider;
 
-use HintikDev\OAuth2\Client\Provider\ZcuResourceOwner;
+use Hintik\OAuth2\Client\Provider\ZcuResourceOwner;
 use PHPUnit\Framework\TestCase;
 
 final class ZcuResourceOwnerTest extends TestCase

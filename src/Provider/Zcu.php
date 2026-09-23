@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace HintikDev\OAuth2\Client\Provider;
+namespace Hintik\OAuth2\Client\Provider;
 
-use HintikDev\OAuth2\Client\Exception\ZcuIdentityProviderException;
+use Hintik\OAuth2\Client\Exception\ZcuIdentityProviderException;
 use InvalidArgumentException;
 use League\OAuth2\Client\OptionProvider\HttpBasicAuthOptionProvider;
 use League\OAuth2\Client\OptionProvider\PostAuthOptionProvider;

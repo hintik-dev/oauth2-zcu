@@ -1,20 +1,20 @@
 <?php declare(strict_types = 1);
 
-namespace HintikDev\OAuth2\Client\Tests\Flow;
+namespace Hintik\OAuth2\Client\Tests\Flow;
 
 use Contributte\OAuth2Client\Exception\Logical\InvalidArgumentException;
 use Contributte\OAuth2Client\Exception\Runtime\PossibleCsrfAttackException;
 use Contributte\OAuth2Client\Exception\Runtime\UserProbablyDeniedAccessException;
 use Contributte\OAuth2Client\Flow\AuthCodeFlow;
 use Firebase\JWT\JWT;
-use HintikDev\OAuth2\Client\Exception\AuthenticationFailedException;
-use HintikDev\OAuth2\Client\Exception\IdTokenException;
-use HintikDev\OAuth2\Client\Exception\ZcuIdentityProviderException;
-use HintikDev\OAuth2\Client\Flow\ZcuAuthCodeFlow;
-use HintikDev\OAuth2\Client\Provider\Zcu;
-use HintikDev\OAuth2\Client\Tests\Support\ArraySession;
-use HintikDev\OAuth2\Client\Tests\Support\MockHttpClient;
-use HintikDev\OAuth2\Client\Token\ZcuIdTokenVerifier;
+use Hintik\OAuth2\Client\Exception\AuthenticationFailedException;
+use Hintik\OAuth2\Client\Exception\IdTokenException;
+use Hintik\OAuth2\Client\Exception\ZcuIdentityProviderException;
+use Hintik\OAuth2\Client\Flow\ZcuAuthCodeFlow;
+use Hintik\OAuth2\Client\Provider\Zcu;
+use Hintik\OAuth2\Client\Tests\Support\ArraySession;
+use Hintik\OAuth2\Client\Tests\Support\MockHttpClient;
+use Hintik\OAuth2\Client\Token\ZcuIdTokenVerifier;
 use OpenSSLAsymmetricKey;
 use PHPUnit\Framework\TestCase;
 

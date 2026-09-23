@@ -1,18 +1,18 @@
 <?php declare(strict_types = 1);
 
-namespace HintikDev\OAuth2\Client\Flow;
+namespace Hintik\OAuth2\Client\Flow;
 
 use Contributte\OAuth2Client\Exception\Logical\InvalidArgumentException;
 use Contributte\OAuth2Client\Exception\Runtime\CannotAuthenticateUserException;
 use Contributte\OAuth2Client\Exception\Runtime\PossibleCsrfAttackException;
 use Contributte\OAuth2Client\Exception\Runtime\UserProbablyDeniedAccessException;
 use Contributte\OAuth2Client\Flow\AuthCodeFlow;
-use HintikDev\OAuth2\Client\Exception\AuthenticationFailedException;
-use HintikDev\OAuth2\Client\Exception\IdTokenException;
-use HintikDev\OAuth2\Client\Provider\Zcu;
-use HintikDev\OAuth2\Client\Provider\ZcuResourceOwner;
-use HintikDev\OAuth2\Client\Token\ZcuIdToken;
-use HintikDev\OAuth2\Client\Token\ZcuIdTokenVerifier;
+use Hintik\OAuth2\Client\Exception\AuthenticationFailedException;
+use Hintik\OAuth2\Client\Exception\IdTokenException;
+use Hintik\OAuth2\Client\Provider\Zcu;
+use Hintik\OAuth2\Client\Provider\ZcuResourceOwner;
+use Hintik\OAuth2\Client\Token\ZcuIdToken;
+use Hintik\OAuth2\Client\Token\ZcuIdTokenVerifier;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Token\AccessTokenInterface;

@@ -1,12 +1,12 @@
 <?php declare(strict_types = 1);
 
-namespace HintikDev\OAuth2\Client\Tests\Provider;
+namespace Hintik\OAuth2\Client\Tests\Provider;
 
 use GuzzleHttp\Psr7\Response;
-use HintikDev\OAuth2\Client\Exception\ZcuIdentityProviderException;
-use HintikDev\OAuth2\Client\Provider\Zcu;
-use HintikDev\OAuth2\Client\Provider\ZcuResourceOwner;
-use HintikDev\OAuth2\Client\Tests\Support\MockHttpClient;
+use Hintik\OAuth2\Client\Exception\ZcuIdentityProviderException;
+use Hintik\OAuth2\Client\Provider\Zcu;
+use Hintik\OAuth2\Client\Provider\ZcuResourceOwner;
+use Hintik\OAuth2\Client\Tests\Support\MockHttpClient;
 use InvalidArgumentException;
 use League\OAuth2\Client\Token\AccessToken;
 use PHPUnit\Framework\TestCase;
